@@ -107,6 +107,7 @@ header {
 	width: 250px;
 	border-radius: 12px;
 }
+/*ssddsdsdsd*/
 .featured-track__cover img {
 	height: 100%;
 	width: 100%;
@@ -312,7 +313,7 @@ header {
 .playlist {
 	margin-bottom: 10px;
 }
-.playlist__button__all_track {
+.playlist__button-all-track {
 	align-items: center;
 	width: 150px;
 	height: 50px;
