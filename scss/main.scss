@@ -1,5 +1,5 @@
 @import "null_style";
-
+@import "style_media";
 %ContactInput{
   border: none;
   border-bottom: 1px solid white;
@@ -8,11 +8,16 @@
   outline: none;
   font-weight: bold;
 }
-
+%BorderLink{
+  border-left-width: 1px ;
+  border-left-style: solid;
+  border-color: rgba(117, 117, 117, 0.2);;
+}
 .max-layout-width {
   position: relative;
   display: inline-block;
   width: 100%;
+  height: 100%;
   max-width: 1114px;
   padding: 0;
 }
@@ -47,7 +52,7 @@ header{
   display: flex;
   align-items: center;
   justify-content: space-between;
-  min-height: 55px;
+  min-height: 65px;
 
   &__lable {
     padding-left: 120px;
@@ -61,24 +66,54 @@ header{
   color: white;
 }
 
-.menu {
-
-  &__list {
-    //add media content
-    display: flex;
-    align-items: center;
-    //
-    list-style-type: none;
-  }
-
-  &__link {
-    color: white;
-    text-decoration: none;
-    list-style: none;
-    padding-right: 30px;
+.beats{
+  margin-top: 100px;
+  & .search__area{
+    text-align: center;
   }
 }
 
+.menu {
+  display: flex;
+  align-items: center;
+  &__list {
+    display: flex;
+    align-items: center;
+  }
+
+  &__buy-log-user{
+    display: flex;
+    align-items: center;
+  }
+
+  &__link {
+    padding: 0 15px;
+    font-size: 14px;
+    font-weight: 600;
+  }
+}
+.link-buy{
+  display:flex;
+  justify-content: center;
+  height: 65px;
+  align-items: center;
+  padding: 0 20px;
+  @extend %BorderLink;
+  a.menu__link {
+    padding: 0 8px;
+  }
+}
+.link-login{
+  display:flex;
+  justify-content: center;
+  height: 65px;
+  align-items: center;
+  padding: 0 15px;
+  @extend %BorderLink;
+  a.menu__link {
+    padding: 0 8px;
+  }
+}
 .logo {
   margin-top: 125px;
   margin-bottom: 30px;
@@ -92,17 +127,27 @@ header{
   margin: 0 auto;
 }
 
+.beats-lable{
+  margin-top:100px ;
+  font-weight: 900;
+  font-size: 48px;
+}
+
 .search {
   display: block;
-
+  &__container{
+    width: 80%;
+    margin: 0 auto;
+  }
   &__area {
-    width: 840px;
+    width: 100%;
     height: 60px;
     padding-left: 25px;
     padding-right: 100px;
     letter-spacing: 2px;
     font-size: 18px;
     border-radius: 4px;
+    font-weight: 600;
   }
 
   &__button {
