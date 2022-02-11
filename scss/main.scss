@@ -1,18 +1,31 @@
 @import "null_style";
+
 %ContactInput{
   border: none;
   border-bottom: 1px solid white;
   background-color: transparent;
   color: inherit;
   outline: none;
+  font-weight: bold;
 }
+
+.max-layout-width {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  max-width: 1114px;
+  padding: 0;
+}
+
 a{color: white;}
+
 body{
   background-color:black;
   color: white;
   font-family: 'Montserrat', sans-serif;
   text-align: center;
 }
+
 header{
   position: fixed;
   top: 0;
@@ -21,29 +34,35 @@ header{
   z-index: 2;
   background-color: black;
 }
+
 .wrapper {
   overflow: hidden;
   display: flex;
   flex-direction: column;
   min-height: 100%;
 }
+
 .header-container {
   margin: 0 auto;
   display: flex;
   align-items: center;
   justify-content: space-between;
   min-height: 55px;
+
   &__lable {
     padding-left: 120px;
-
   }
+
 }
+
 .lable {
   font-family: 'Syne', sans-serif;
   font-size: 25px;
   color: white;
 }
+
 .menu {
+
   &__list {
     //add media content
     display: flex;
@@ -51,6 +70,7 @@ header{
     //
     list-style-type: none;
   }
+
   &__link {
     color: white;
     text-decoration: none;
@@ -58,10 +78,12 @@ header{
     padding-right: 30px;
   }
 }
+
 .logo {
   margin-top: 125px;
   margin-bottom: 30px;
 }
+
 .search-and-featured-track-container {
   display: flex;
   flex-direction: column;
@@ -69,25 +91,28 @@ header{
   max-width: 840px;
   margin: 0 auto;
 }
+
 .search {
   display: block;
+
   &__area {
     width: 840px;
-    height: 55px;
+    height: 60px;
     padding-left: 25px;
     padding-right: 100px;
     letter-spacing: 2px;
     font-size: 18px;
-    border-radius: 7px;
+    border-radius: 4px;
   }
+
   &__button {
     position: absolute;
-    width: 70px;
-    height: 35px;
-    top: 10px;
-    right: 15px;
-    border-radius: 3px;
-    background-color: #c4c4c4;
+    width: 80px;
+    height: 45px;
+    top: 7.5px;
+    right: 7.5px;
+    border-radius: 2px;
+    background-color: #cccccc;
     font-weight: 600;
     cursor: pointer;
   }
@@ -95,22 +120,26 @@ header{
 .featured-track {
   display: flex;
   flex-direction: row;
+
   &__container {
     margin-top: 30px;
     display: flex;
     flex-direction: row;
   }
+
   &__cover {
     height: 250px;
     width: 250px;
     border-radius: 12px;
   }
+
   &__cover img{
     height: 100%;
     width: 100%;
     object-fit: cover;
     border-radius: 12px;
   }
+
   &__button-play {
     height: 80px;
     width: 80px;
@@ -120,34 +149,46 @@ header{
     padding: 5px 0 0 10px;
     cursor: pointer;
   }
+
   &__lable {
     padding-left: 20px;
     padding-top: 10px;
     font-weight: 700;
     text-align: left;
   }
+
   &__name {
     font-family: 'Syne', sans-serif;
     font-size: 48px;
     padding-top: 10px;
     letter-spacing: 2px;
   }
+
   &__button-block {
     margin-top: 10px;
     &__button-buy {
     }
+
     &__button-download {
       margin-left: 10px;
     }
+
     &__button-share {
       margin-left: 10px;
     }
   }
 }
+
+#canvas1{
+  width: 100%;
+  height: 100%;
+}
+
 .button-block {
   display: flex;
   flex-direction: row;
 }
+
 .button-buy {
   width: 80px;
   height: 39px;
@@ -161,24 +202,27 @@ header{
     width: 20px;
   }
 }
+
 .button-download {
   width: 39px;
   height: 39px;
   border-radius: 3px;
   background-color: #2b2b2b;
 }
+
 .button-share {
   width: 39px;
   height: 39px;
   border-radius: 3px;
   background-color: #2b2b2b;
 }
+
 .equalizer {
   display: flex;
   align-items: flex-end;
   justify-content: center;
   margin-top: 25px;
-  height: 80px;
+  height: 90px;
   width: 570px;
   position: relative;
 }
@@ -190,9 +234,9 @@ header{
     padding-top: 40px;
     margin: 0 auto;
   }
-  &__basis {
-    list-style: none;
-  }
+
+  &__basis {list-style: none;}
+
   &__li {
     display: flex;
     flex-direction: row;
@@ -202,20 +246,16 @@ header{
     text-align: left;
     margin-bottom: 10px;
   }
-  &__title {
-    width: 40%;
-  }
-  &__time {
-    width: 8%;
-  }
-  &__bpm {
-    width: 5%;
-  }
-  &__tags {
-    width: 23.5%;
-  }
-  &__sale {
-  }
+  &__title {width: 40%;}
+
+  &__time {width: 8%;}
+
+  &__bpm {width: 5%;}
+
+  &__tags {width: 23.5%;}
+
+  &__sale {}
+
   &__item {
     display: flex;
     flex-direction: row;
@@ -232,9 +272,11 @@ header{
       align-items: center;
       width: 40%;
     }
+
     &__track-icon {
       height: 65px;
       width: 65px;
+
       & img{
         height: 100%;
         width: 100%;
@@ -242,6 +284,7 @@ header{
         border-radius: 4px;
       }
     }
+
     &__track-name {
       padding-left: 25px;
       padding-right: 5px;
@@ -249,12 +292,11 @@ header{
       overflow: hidden;
       text-overflow: ellipsis;
     }
-    &__track-time {
-      width: 8%;
-    }
-    &__track-bpm {
-      width: 5%;
-    }
+
+    &__track-time {width: 8%;}
+
+    &__track-bpm {width: 5%;}
+
     &__track-tags {
       width: 23.5%;
       display: flex;
@@ -269,11 +311,13 @@ header{
         width: 100px;
         height: 45px;
       }
+
       & .button-share{
         width: 45px;
         height: 45px;
         margin-left: 10px;
       }
+
       & .button-download{
         width: 45px;
         height: 45px;
@@ -282,17 +326,20 @@ header{
   }
   &__button-all-track {
       align-items: center;
-      width: 150px;
+      width: 180px;
       height: 50px;
       border-radius: 3px;
       margin-bottom: 40px;
+      margin-top: 15px;
       font-weight: 600;
   }
 }
+
 .main-playlist {
   display: flex;
   flex-direction: column;
 }
+
 .tag {
     margin-right: 10px;
     padding: 0 15px;
@@ -307,23 +354,30 @@ header{
     text-overflow: ellipsis;
     font-weight: 700;
   }
+
 .licensing-info {
   background-color: #111111;
   display: flex;
   flex-direction: column;
   align-items: center;
-  &__title {
+  &__name {
     font-weight: bolder;
     line-height: 45px;
   }
+
+  &__title{
+    margin-top:40px;
+  }
+
   &__container {
     display: flex;
     flex-direction: row;
     width: 1114px;
     justify-content: space-between;
   }
+
   &__box {
-    margin-top: 80px;
+    margin-top: 50px;
     max-width: 16.15%;
     display: flex;
     flex-direction: column;
@@ -331,16 +385,24 @@ header{
     height: 425px;
     position: relative;
   }
+
   &__price {
     font-size: 48px;
     font-weight: 800;
     line-height: 59px;
   }
+
   &__file-info {
     font-size: 14px;
     font-weight: 800;
     line-height: 35px;
   }
+
+  & li{
+    list-style-type:disc;
+    list-style-position: inside;
+  }
+
   &__text {
     font-weight: 500;
     font-size: 12px;
@@ -348,6 +410,7 @@ header{
     letter-spacing: -0.02em;
     word-spacing: -0.05em;
   }
+
   &__button {
     align-items: center;
     width: 100%;
@@ -358,8 +421,9 @@ header{
     position: absolute;
     bottom: 0;
   }
+
   &__popular {
-    margin-top: 40px;
+    margin-top: 30px;
     margin-bottom: 50px;
     padding-top: 40px;
     max-width: 21%;
@@ -377,16 +441,27 @@ header{
       color: white;
       width: 75%;
     }
+
     & .licensing-info__file-info {
       line-height: 20px;
       padding:10px 0;}
+
+    & .licensing-info__li{
+      color:black;
+    }
+
+    & .licensing-info__text{
+      padding: 0 15px;
+    }
   }
+
   &__popular-label {
     position: absolute;
     top: 15px;
     font-weight: bolder;
     & img{padding-right: 3px;}
   }
+
   &__price-exclusive {
     letter-spacing: -0.1em;
     word-spacing: -0.05em;
@@ -402,34 +477,41 @@ header{
   font-size: 24px;
   font-weight: 700;}
 
-
 .contact {
-  display: flex;
-  flex-direction: column;
-  max-width: 30vw;
-  margin: 0 auto;
-  &__title {
-    margin-top: 160px;
+  padding-top: 160px;
+  padding-bottom: 250px;
+
+  &__container{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    margin: 0 auto;
   }
+
+  &__title {
+  }
+
   &__input-informaition {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     color: white;
   }
+
   &__first-string {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     margin-top: 40px;
   }
+
   &__button {
     position: relative;
-    margin-bottom: 250px;
   }
+
   &__submit-button {
     margin-top: 40px;
-    width: 120px;
+    width: 160px;
     height: 45px;
     border-radius: 3px;
     font-weight: 600;
@@ -463,14 +545,17 @@ header{
 .footer {
   background-color: #111111;
   height: 300px;
+  width: 100%;
   padding: 60px 0 90px;
-  &__container {
+  display: block;
+  &__row {
     display: flex;
     flex-direction: row;
-    max-width: 1114px;
-    margin: 0 auto;
-    height: 100%;
-    justify-content: space-between;
+    align-items: center;
+    justify-content: center;
+  }
+  &__container{
+    display: flex;
   }
   &__logo {
     width: 25%;
@@ -479,18 +564,22 @@ header{
       padding-left: 7px;
     }
   }
+
   &__link {
-    width: 30vw;
     display: flex;
+    width: 50%;
   }
+
   &__menu {
-    list-style-type: none;
+    width: 50%;
     text-align: left;
     font-size: 15px;
-    letter-spacing: -0.05em;
-    padding-right: 80px;
-    padding-top: 15px;
+    letter-spacing: 0.01em;
+    & li{
+      padding-bottom: 20px;
+    }
   }
+
   &__social-media {
     width: 25%;
     display: flex;
