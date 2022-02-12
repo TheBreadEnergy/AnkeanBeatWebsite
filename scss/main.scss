@@ -85,26 +85,9 @@ header{
 .menu {
   display: flex;
   align-items: center;
-  height: 100%;
-  &__list {
-    display: flex;
-    align-items: center;
-    height: 65px;
-    text-align: center;
-    & li{
-      display: flex;
-      height: 100%;
-      align-items: center;
-      position: relative;
-      justify-content: center;
-      &:hover{
-        .menu__link__border{
-          @extend %MenuBorder;
-        }
-      }
+  &__list > li {
+    position: relative;
     }
-  }
-
   &__buy-log-user{
     display: flex;
     align-items: center;

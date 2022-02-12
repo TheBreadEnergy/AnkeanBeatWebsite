@@ -1,3 +1,13 @@
+//burger menu
+const BurgerMenu = document.querySelector('.header__burger-menu');
+if(BurgerMenu){
+	const menu = document.querySelector(".menu__list");
+	BurgerMenu.addEventListener("click", function (e){
+		BurgerMenu.classList.toggle("_active");
+		menu.classList.toggle("active");
+	});
+}
+
 const button_play = document.getElementById('Button_play')
 const canvas = document.getElementById('canvas1')
 const ctx = canvas.getContext('2d')
