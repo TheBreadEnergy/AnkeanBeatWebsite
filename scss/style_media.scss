@@ -36,21 +36,53 @@
     margin: 0!important;
   }
   //delete bpm and tag info
-  .playlist__basis{
-    display: none;
-  }
-  .playlist__item__track-bpm{
-    display: none;
-  }
-  .playlist__item__track-tags{
-    display: none
-  }
-  .playlist__item__icon-name{
-    width: 70%!important;
-  }
-  .playlist__item__track-time{
-    width: 10%!important;
-  }
+  .playlist {
+    &__basis {
+      display: none;
+    }
+    &__item{
+      &__track-bpm {
+        display: none;
+      }
 
+      &__track-tags {
+        display: none !important;
+      }
+
+      &__icon-name {
+        width: 70% !important;
+      }
+
+      &__track-time {
+        display: none;
+      }
+
+    }
+
+  }
+  //change contact table
+  .contact__first-string{
+    flex-direction: column!important;
+  }
+  .input-name{
+    width: 100%!important;
+  }
+  .input-email{
+    margin-top: 40px;
+    width: 100%!important;
+  }
+  //footer
+  .footer{
+    text-align: center!important;
+    &__container{
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    }
+    &__logo{padding-bottom: 30px!important;
+    width: auto!important;}
+    &__link{padding-bottom: 10px!important;}
+    &__social-media{justify-content: center!important;}
+  }
 }
 /*______________*/

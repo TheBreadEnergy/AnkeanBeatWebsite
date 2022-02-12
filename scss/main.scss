@@ -13,6 +13,15 @@
   border-left-style: solid;
   border-color: rgba(117, 117, 117, 0.2);;
 }
+%MenuBorder{
+  width: 90%;
+  bottom: 0;
+  position: absolute;
+  border-bottom-width: 1px;
+  border-bottom-style: solid;
+  border-bottom-color: white;
+}
+
 .max-layout-width {
   position: relative;
   display: inline-block;
@@ -76,9 +85,24 @@ header{
 .menu {
   display: flex;
   align-items: center;
+  height: 100%;
   &__list {
     display: flex;
     align-items: center;
+    height: 65px;
+    text-align: center;
+    & li{
+      display: flex;
+      height: 100%;
+      align-items: center;
+      position: relative;
+      justify-content: center;
+      &:hover{
+        .menu__link__border{
+          @extend %MenuBorder;
+        }
+      }
+    }
   }
 
   &__buy-log-user{
@@ -90,6 +114,7 @@ header{
     padding: 0 15px;
     font-size: 14px;
     font-weight: 600;
+    position: relative;
   }
 }
 .link-buy{
@@ -98,9 +123,18 @@ header{
   height: 65px;
   align-items: center;
   padding: 0 20px;
+  position: relative;
   @extend %BorderLink;
   a.menu__link {
     padding: 0 8px;
+  }
+
+  &:hover{
+    &:hover{
+      .link-buy__border{
+        @extend %MenuBorder;
+      }
+    }
   }
 }
 .link-login{
@@ -109,11 +143,19 @@ header{
   height: 65px;
   align-items: center;
   padding: 0 15px;
+  position: relative;
   @extend %BorderLink;
   a.menu__link {
     padding: 0 8px;
   }
+
+  &:hover{
+    .link-login__border{
+      @extend %MenuBorder;
+    }
+  }
 }
+
 .logo {
   margin-top: 125px;
   margin-bottom: 30px;
@@ -304,23 +346,36 @@ header{
   &__item {
     display: flex;
     flex-direction: row;
-    height: 65px;
+    height: 60px;
     font-size: 16px;
     font-weight: 600;
     align-items: center;
     margin-bottom: 10px;
     position: relative;
     text-align: left;
+    overflow: hidden;
     &__icon-name {
       display: flex;
       flex-direction: row;
       align-items: center;
       width: 40%;
     }
+    &__border-track{
+      position: absolute;
+      bottom: 0;
+      width: 100%;
+      margin-left: 65px;
+      border-bottom-width: 1px;
+      border-bottom-style: solid;
+      border-color: rgba(117, 117, 117, 0.2);
+    }
 
     &__track-icon {
-      height: 65px;
-      width: 65px;
+      height: 50px;
+      width: 50px;
+      position: absolute;
+      top: 5px;
+      left: 0;
 
       & img{
         height: 100%;
@@ -331,7 +386,7 @@ header{
     }
 
     &__track-name {
-      padding-left: 25px;
+      padding-left: 65px;
       padding-right: 5px;
       white-space: nowrap;
       overflow: hidden;
@@ -351,21 +406,24 @@ header{
       display: flex;
       flex-direction: row;
       margin-left: auto;
+      position: absolute;
+      right: 0;
+      top: 10px;
       & .button-buy{
         margin-left: 10px;
         width: 100px;
-        height: 45px;
+        height: 40px;
       }
 
       & .button-share{
-        width: 45px;
-        height: 45px;
+        width: 40px;
+        height: 40px;
         margin-left: 10px;
       }
 
       & .button-download{
-        width: 45px;
-        height: 45px;
+        width: 40px;
+        height: 40px;
       }
     }
   }
@@ -374,8 +432,8 @@ header{
       width: 180px;
       height: 50px;
       border-radius: 3px;
-      margin-bottom: 40px;
-      margin-top: 15px;
+      margin-bottom: 45px;
+      margin-top: 20px;
       font-weight: 600;
   }
 }
@@ -389,9 +447,9 @@ header{
     margin-right: 10px;
     padding: 0 15px;
     background-color: #2b2b2b;
-    height: 45px;
+    height: 40px;
     max-width: 150px;
-    border-radius: 25px;
+    border-radius: 30px;
     display: flex;
     align-items: center;
     white-space: nowrap;
@@ -411,7 +469,7 @@ header{
   }
 
   &__title{
-    margin-top:40px;
+    margin-top:45px;
   }
 
   &__container {
