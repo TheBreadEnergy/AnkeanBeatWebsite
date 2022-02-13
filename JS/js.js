@@ -3,8 +3,20 @@ const BurgerMenu = document.querySelector('.header__burger-menu');
 if(BurgerMenu){
 	const menu = document.querySelector(".menu__list");
 	BurgerMenu.addEventListener("click", function (e){
-		BurgerMenu.classList.toggle("_active");
-		menu.classList.toggle("active");
+		menu.classList.toggle("_active");
+	});
+}
+//search header
+const LinkSearch = document.querySelector('.link-search__button');
+if(LinkSearch){
+	const CloseMenu = document.querySelector(".menu__list");
+	const SearchBox = document.querySelector(".link-search");
+	const SearchInput = document.querySelector(".link-search__input")
+	LinkSearch.addEventListener("click", function (e){
+		LinkSearch.classList.toggle("_active");
+		CloseMenu.classList.toggle("_close");
+		SearchBox.classList.toggle("_open");
+		SearchInput.classList.toggle("_open");
 	});
 }
 
