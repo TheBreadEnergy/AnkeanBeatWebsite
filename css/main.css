@@ -194,6 +194,78 @@ h1, h2, h3, h4, h5, h6 {
         border-bottom-width: 1px;
         border-bottom-style: solid;
         border-bottom-color: white; } }
+/*media max width 768px*/
+@media (max-width: 768px) {
+  .footer__link {
+    width: 90% !important;
+    padding-bottom: 20px !important; }
+  .footer__menu {
+    padding-right: 10px;
+    text-align: center !important; }
+
+  .header-container__lable span {
+    display: none; }
+
+  .button-share {
+    display: none; }
+
+  .link-search._open {
+    position: absolute;
+    align-items: center;
+    top: 0;
+    left: 0;
+    width: 100% !important;
+    background-color: black;
+    z-index: 10;
+    height: 65px;
+    padding-left: 15px;
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+    border-color: rgba(117, 117, 117, 0.2); }
+  .link-search__button {
+    padding: 5px 10px 0 !important; }
+  .link-search__button._active {
+    padding-top: 22px !important; }
+
+  .contact__container {
+    width: 80% !important; } }
+/*media max width 540px*/
+@media (max-width: 540px) {
+  .link-buy {
+    padding: 0 10px !important;
+    border-left-width: 0 !important; }
+    .link-buy a {
+      display: none; }
+
+  .link-login {
+    border-left-width: 0 !important;
+    padding: 0 10px !important; }
+
+  .contact__container {
+    width: 95% !important; }
+
+  .playlist__item__track-sale .button-buy {
+    width: 40px !important; }
+    .playlist__item__track-sale .button-buy span {
+      display: none; } }
+/*media max width 320px*/
+@media (max-width: 320px) {
+  .link-login a {
+    display: none; }
+
+  .featured-track {
+    padding-top: 65px !important; }
+    .featured-track__name {
+      font-size: 28px !important; }
+
+  .equalizer {
+    display: none !important; }
+
+  .playlist__container {
+    padding-top: 15px !important; }
+
+  .footer {
+    padding: 20px 0 60px !important; } }
 /*______________*/
 .input-name, .input-email, .input-subject, .input-message {
   border: none;
@@ -294,7 +366,8 @@ header {
 .link-search {
   display: flex;
   align-items: center;
-  width: 48px; }
+  width: 48px;
+  z-index: 3; }
   .link-search._open {
     width: 240px;
     transition: 0.3s ease 0s; }

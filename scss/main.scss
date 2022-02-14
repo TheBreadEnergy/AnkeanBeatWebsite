@@ -117,6 +117,7 @@ header{
   display: flex;
   align-items: center;
   width: 48px;
+  z-index: 3;
   &._open{
     width: 240px;
     transition: 0.3s ease 0s;;
