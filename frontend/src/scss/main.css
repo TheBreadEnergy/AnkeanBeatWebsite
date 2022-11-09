@@ -1,0 +1,34 @@
+body {
+  background-color: black; }
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 2;
+  background-color: black; }
+
+.wrapper {
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  min-height: 100%; }
+
+.header-container {
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  min-height: 55px; }
+  .header-container__lable {
+    padding-left: 120px; }
+
+.lable {
+  font-family: 'Syne', sans-serif;
+  font-size: 25px;
+  color: white;
+  text-decoration: none;
+  font-size: 1px; }
+
+/*# sourceMappingURL=beats.css.map */

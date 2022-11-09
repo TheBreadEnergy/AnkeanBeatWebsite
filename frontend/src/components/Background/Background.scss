@@ -1,0 +1,20 @@
+@import "../../scss/Constant";
+
+.video-background{
+  padding-top:  0px;
+  width: 100%;
+  position: absolute;
+  z-index: $background;
+  opacity: 0;
+  animation:  back 1s forwards;
+}
+.video-background-profile{top: -15%;}
+.video-background-beats{top:-19%;}
+.video-background-beat{top:-8.5%;}
+@keyframes back {
+  0% {opacity: 0;}
+  100% {opacity: 1;}
+}
+
+
+

@@ -1,0 +1,1163 @@
+@import "Index";
+
+%IsLoading {
+  background: #3d3d3d;
+  background: linear-gradient(110deg, $loaderFirsColor 8%, $loaderSecondColor 18%, $loaderFirsColor 33%);
+  border-radius: 5px;
+  background-size: 200% 100%;
+  animation: 1.5s shine linear infinite;
+}
+
+%keyFrameLoading {
+  @keyframes shine {
+    to {background-position-x: -200%;}
+  }
+}
+
+.eror-page {
+  padding: 110px 0;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+
+  &__title {
+    margin-bottom: 50px
+  }
+
+  &__img {
+    border-radius: 50%;;
+    width: 200px;
+    margin: 0 auto 45px
+  }
+}
+
+body {
+  color: $secondColor;
+  font-family: 'Montserrat', sans-serif;
+  text-align: center;
+  height: 100%;
+}
+
+.background {
+  background: black;
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+
+.wrapper {
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+}
+
+main {
+  min-height: calc(100vh - 300px);
+  z-index: $base;
+}
+
+.lable {
+  font-family: 'Syne', sans-serif;
+  font-size: 25px;
+  color: $secondColor;
+
+  & span {
+    padding-left: 5px;
+  }
+}
+
+.beats {
+  margin-top: 100px;
+
+  & .search__area {
+    text-align: center;
+
+  }
+}
+
+.link-search {
+  display: flex;
+  align-items: center;
+  width: 48px;
+  z-index: $search;
+
+  &._open {
+    width: 300px;
+    transition: 0.3s ease 0s;
+  }
+
+  & input {
+    font-size: 15px;
+    width: 100%;
+    height: 50px;
+    border: none;
+    background-color: transparent;
+    color: $thirdColor;
+    outline: none;
+    font-weight: bold;
+    transition: 0.3s ease 0s;
+
+    &._open {
+      display: block;
+      transition: width .3s ease 0s;
+    }
+  }
+
+  &__button {
+    padding: 5px 15px 0px 15px;
+    height: 100%;
+    cursor: pointer;
+    margin-left: auto;
+
+    & img {
+      height: 18px;
+      width: 18px;
+    }
+  }
+}
+
+.logo {
+  margin-top: 125px;
+  margin-bottom: 30px;
+}
+
+.search-and-featured-track-container {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  margin: 0 auto;
+
+}
+
+.beats-lable {
+  margin-top: 100px;
+  font-weight: 900;
+  font-size: 48px;
+}
+
+.search {
+  display: block;
+
+  &__container {
+    width: 80%;
+    margin: 0 auto;
+  }
+
+  &__area {
+    width: 100%;
+    height: 60px;
+    padding-left: 25px;
+    padding-right: 100px;
+    letter-spacing: 2px;
+    font-size: 18px;
+    border-radius: 4px;
+    font-weight: 600;
+
+  }
+
+  .result {
+    width: 100%;
+    background: $secondColor;
+    color: $mainClor;
+    position: absolute;
+    top: 60px;
+    z-index: $searchResult;
+    margin-top: 3px;
+    border-radius: 5px;
+    padding: 10px 0;
+
+    &__tag {
+      margin-left: 5px;
+      font-size: 12px;
+      color: $thirdColor;
+    }
+
+    &__item {
+      display: flex;
+      color: $sideAndButtonsColor;
+      font-weight: 600;
+      align-items: center;
+      height: 40px;
+      text-align: left;
+      padding-left: 15px;
+      cursor: pointer;
+
+      & img {
+        width: 35px;
+        height: 35px;
+        margin-right: 8px;
+      }
+
+      &:hover {
+        background: $searchHoverColor;
+      }
+    }
+
+  }
+
+  &__button {
+    position: absolute;
+    top: 7.5px;
+    right: 7.5px;
+    width: 80px;
+    height: 45px;
+    @extend %Button;
+  }
+}
+
+.featured-track {
+  margin: 45px 0 45px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  min-width: 50%;
+
+  &__tags-block {
+    padding: 10px 0 5px 5px;
+  }
+
+  &__buttons-block {
+    padding-top: 8px;
+    position: absolute;
+    bottom: 5px;
+
+    .button-buy {
+      margin-left: 0 !important;
+    }
+
+    .button-download {
+      margin-left: 10px;
+    }
+  }
+
+  &__cover {
+    height: 150px;
+    width: 150px;
+    position: relative;
+  }
+
+  &__cover img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    cursor: pointer;
+  }
+
+  &__button-play {
+    height: 55px;
+    width: 55px;
+    border-radius: 50%;
+    position: absolute;
+    left: 47.5px;
+    top: 47.5px;
+
+    & img {
+      height: 35px;
+      width: 35px;
+    }
+  }
+
+  &__lable {
+    font-weight: 700;
+    text-align: left;
+    padding-left: 25px;
+    max-width: 690px;
+    position: relative;
+  }
+
+  &__title {
+    margin-top: 10px;
+    word-spacing: 0.1em;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 690px;
+
+
+  }
+
+}
+
+.is-loading {
+  .item__track-name,
+  .item__track-icon,
+  .item__track-time,
+  .item__track-bpm,
+  .featured-track__cover,
+  .featured-track__name,
+  .tags-block__tags,
+  {
+    @extend %IsLoading;
+  }
+
+  .tags-block__tags {
+    margin-top: 5px;
+    height: 12px;
+    border-radius: 2px;
+
+    &.tag-1 {
+      width: 55px
+    }
+
+    &.tag-2 {
+      width: 45px
+    }
+
+    &.tag-3 {
+      width: 70px
+    }
+  }
+
+  .featured-track {
+    &__name {
+      width: 300px;
+      height: 50px;
+      margin-top: 10px;
+    }
+  }
+
+  .tag {
+    background: linear-gradient(110deg, #1c1c1c 8%, #252525 18%, #1c1c1c 33%);
+    background-size: 200% 100%;
+    animation: 1.5s shine linear infinite;
+    height: 35px;
+  }
+
+  .item__track-name {
+    margin-left: 75px;
+    width: 75%;
+    height: 25px;
+  }
+
+  .item__track-time {
+    width: 4%;
+    height: 25px;
+    margin-right: 42px;
+  }
+
+  .item__track-bpm {
+    width: 4%;
+    height: 25px;
+    margin-right: 25px;
+  }
+
+  @extend %keyFrameLoading;
+
+  &.length-0 {
+    .item__track-name {
+      width: 40%;
+    }
+
+    .tag-1 {
+      width: 90px
+    }
+
+    .tag-2 {
+      width: 70px
+    }
+
+    .tag-3 {
+      visibility: hidden
+    }
+  }
+
+  &.length-2 {
+    .item__track-name {
+      width: 70%
+    }
+
+    .tag-1 {
+      width: 60px
+    }
+
+    .tag-2 {
+      width: 100px
+    }
+
+    .tag-3 {
+      width: 50px
+    }
+  }
+
+  &.length-4 {
+    .item__track-name {
+      width: 60%;
+    }
+
+    .tag-1 {
+      width: 85px
+    }
+
+    .tag-2 {
+      width: 100px
+    }
+
+    .tag-3 {
+      visibility: hidden
+    }
+  }
+
+  &.length-6 {
+    .item__track-name {
+      width: 40%;
+    }
+
+    .tag-1 {
+      width: 60px
+    }
+
+    .tag-2 {
+      width: 100px
+    }
+
+    .tag-3 {
+      width: 50px
+    }
+  }
+
+  &.length-8 {
+    .item__track-name {
+      width: 70%
+    }
+
+    .tag-1 {
+      width: 75px
+    }
+
+    .tag-2 {
+      width: 80px
+    }
+
+    .tag-3 {
+      width: 60px
+    }
+  }
+
+  &.length-9 {
+    .item__track-name {
+      width: 60%;
+    }
+
+    .tag-1 {
+      width: 100px
+    }
+
+    .tag-2 {
+      width: 100px
+    }
+
+    .tag-3 {
+      visibility: hidden
+    }
+  }
+}
+
+.item {
+  display: flex;
+  flex-direction: row;
+  height: 60px;
+  font-size: 16px;
+  font-weight: 600;
+  align-items: center;
+  position: relative;
+  text-align: left;
+  overflow: hidden;
+  width: 100%;
+
+  &__back-toggle {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: $backgroundItemsPlaylist;
+  }
+
+  &__icon-name {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: $TitleWidth;
+    z-index: $base;
+  }
+
+  &__border-track {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    margin-left: 65px;
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+    border-color: $borderTransparentGray;
+  }
+
+  &__track-icon {
+    height: 50px;
+    width: 50px;
+    position: absolute;
+    top: 5px;
+    left: 0;
+
+    &:hover .track-stream {
+      display: none;
+    }
+
+    &:hover .track-ico-play {
+      display: block;
+    }
+
+    & img {
+      height: 100%;
+      width: 100%;
+      object-fit: cover;
+    }
+  }
+
+  &__track-name {
+    padding-left: 65px;
+    padding-right: 5px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  &__track-time {
+    width: $TimeWidth;
+    z-index: $base;
+    padding-left: 5px
+  }
+
+  &__track-bpm {
+    width: $BpmWidth;
+    z-index: $base;
+  }
+
+  &__track-tags {
+    width: $TagsWidth;
+    display: flex;
+    flex-direction: row;
+    z-index: $base;
+  }
+
+  &__buttons-block {
+    right: 0;
+    top: 10px;
+    position: absolute;
+    z-index: $base;
+  }
+
+  &__container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+
+  &__track-name-lyrics {
+    padding-left: 65px;
+    width: 100%
+  }
+}
+
+
+.tag {
+  min-width: 65px;
+  line-height: 40px;
+  margin-right: 10px;
+  padding: 0 15px;
+  font-size: 14px;
+  color: $thirdColor;
+  background-color: $sideAndButtonsColor;
+  height: 40px;
+  border-radius: 25px;
+  display: block;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis !important;;
+  font-weight: 500;
+}
+
+
+// drag and drop window settings
+.mediumTextArea {
+  width: 350px;
+  height: 460px;
+}
+
+.smallTextArea {
+  width: 250px;
+  height: 300px;
+}
+
+.loader-small {
+  width: 250px;
+  height: 255px;
+
+  & img {
+    width: 70px;
+    margin-top: 25%;
+  }
+}
+
+.loader-medium {
+  width: 350px;
+  height: 415px;
+
+  & img {
+    width: 100px;
+    margin-top: 30%;
+  }
+}
+
+.Text-Area {
+  position: fixed;
+  bottom: 75px;
+  right: 100px;
+  z-index: $lyricsWindow;
+  background: $sideAndButtonsColor;
+  border-radius: 5px;
+
+  &__popup-menu {
+    position: absolute;
+    top: 45px;
+    right: 15px;
+  }
+
+  &__loader {
+    background: $textAreaLoaderColor;
+    position: absolute;
+    top: 45px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+  }
+
+  &__save {
+    text-align: left;
+    padding: 5px 20px 0 20px;
+    font-size: 15px;
+    font-weight: 600;
+  }
+
+  &__header-menu {
+    padding-right: 15px;
+    height: 100%;
+    align-items: center;
+
+    & div {
+      width: 20px;
+      height: 20px;
+      position: relative;
+
+      img {
+        width: 20px;
+        height: 20px
+      }
+    }
+  }
+
+  &__header {
+    background: $lyricsWindowHeaderColor;
+    height: 45px;
+    display: flex;
+    justify-content: space-between;
+    border-radius: 5px 5px 0 0;
+    font-size: 12px;
+    align-items: center;
+
+    &:hover {
+      cursor: grab;
+    }
+
+    &:active {
+      cursor: grabbing;
+    }
+
+  }
+
+  &__name {
+    padding-left: 15px;
+  }
+
+  &__text {
+    margin-top: 5px;
+    width: 90%;
+    background: $sideAndButtonsColor;
+    color: $secondColor;
+    border: none;
+    resize: none;
+
+    &::-webkit-scrollbar {
+      width: 5px;
+      background: $sideAndButtonsColor;
+    }
+  }
+
+}
+
+.text-medium {
+  height: 88%;
+}
+
+.text-medium-search {
+  height: 70%;
+
+  &__init {
+    height: 76%;
+  }
+}
+
+.text-small {
+  height: 83%;
+}
+
+.text-small-search {
+  height: 54%;
+
+  &__init {
+    height: 65%;
+  }
+}
+
+
+::-webkit-scrollbar {
+  background: $scrollbarColor;
+}
+
+::-webkit-scrollbar-thumb {
+  background: $scrollbarThumbColor;
+}
+
+.track-select {
+  background: $windowBackgroundColor;
+  top: 0;
+}
+
+.track-stream {
+  z-index: $trackStream;
+  width: 12px;
+  height: 12px;
+  top: 19px;
+  left: 19px;
+  border-radius: 6px;
+  background-color: $secondColor;
+  transform: scale(.85);
+  animation: pulse 0.6s ease-in-out infinite;
+
+}
+
+@keyframes pulse {
+  from {
+    transform: scale(.7);
+  }
+  50% {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(.7);
+  }
+}
+
+.track-ico-play {
+  background: $buttonsAndDetailsColors;
+  width: 30px;
+  height: 30px;
+  top: 10px;
+  left: 10px;
+  border-radius: 50%;
+  display: none;
+
+  &.now {
+    display: block;
+  }
+
+  & img {
+    margin-left: 3px;
+    margin-top: 3px;
+    height: 23px;
+    width: 23px;
+  }
+}
+
+.popup-menu {
+  width: 170px;
+  background: $popupMenuColor;
+  border-radius: 0 0 4px 4px;
+  padding: 10px 0;
+  z-index: $menu;
+}
+
+.elem {
+  display: flex;
+  text-align: left;
+  align-items: center;
+  padding: 12px 15px 12px 15px;
+  cursor: pointer;
+
+  &__sub {
+    padding: 5px 0 5px 15px;
+    text-align: left;
+    cursor: pointer;
+
+    &:hover {
+      background: $popupMenuHoverColor;
+    }
+  }
+
+  &:hover {
+    background: $popupMenuHoverColor;
+  }
+
+  & img {
+    margin-right: 5px;
+    width: 16px
+  }
+}
+
+.search-rhyme {
+  padding-top: 15px;
+
+  &__input-field {
+    width: 100%;
+    height: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    margin-bottom: 5px;
+  }
+
+  &__exit {
+    & img {
+      width: 18px;
+      height: 18px
+    }
+
+    margin-right: 15px;
+    opacity: 0.2;
+    cursor: pointer;
+  }
+
+  &__input-rhyme {
+    margin-left: 15px;
+    margin-right: 5px;
+    width: 100%;
+    position: relative;
+  }
+}
+
+.input-rhyme {
+  width: 100%;
+  padding: 0 35px 0 10px;
+  background-color: $inputRhymeColor;
+  color: inherit;
+  font-weight: bold;
+  height: 35px;
+  border-bottom: 1px solid $rhymeBorderColor;
+  border-top: 1px solid $rhymeBorderColor;
+  border-radius: 3px;
+
+  &__button {
+    position: absolute;
+    top: 9px;
+    right: 9px;
+    height: 17px;
+    width: 17px;
+    opacity: 0.5;
+    cursor: pointer;
+  }
+}
+
+
+.rhyme-output {
+  width: 90%;
+  position: relative;
+  height: 40px;
+  padding: 0 15px 0 15px;
+  margin: 0 auto;
+
+  &__toggle-background {
+    width: 100%;
+    height: 80%;
+    position: absolute;
+    top: 8px;
+    left: 0;
+    z-index: 1;
+  }
+
+  &__toggle-background-color-big {
+    background: linear-gradient(90deg, rgba(19, 19, 19, 1) 5%, rgba(19, 19, 19, 0) 15%, rgba(19, 19, 19, 0) 85%, rgba(19, 19, 19, 1) 95%);
+  }
+
+  &__wrapper {
+    overflow: hidden;
+    align-items: center;
+    display: flex;
+
+  }
+
+  &__item {
+    height: 45px;
+    min-width: 100px;
+    padding: 0 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: .2s;
+    text-overflow: ellipsis;
+  }
+
+  &__button {
+    position: absolute;
+    top: 13px;
+    height: 20px;
+    width: 20px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    z-index: 2;
+  }
+
+  &__next {
+    right: 0
+  }
+
+  &__prev {
+    left: 0
+  }
+}
+
+.description {
+  font-size: 14px;
+  color: $thirdColor;
+}
+
+.alert {
+  position: fixed;
+  bottom: 85px;
+  right: 3%;
+  font-size: 15px;
+  z-index: $alert;
+  width: 220px;
+  height: 45px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  background: $sideAndButtonsColor;
+
+  & img {
+    height: 150%
+  }
+}
+
+.burger-menu {
+  position: absolute;
+  width: 35%;
+  height: 100vh;
+  background: $mainClor;
+  top: 65px;
+  left: 0;
+  z-index: $burgerMenu;
+  transition: left 0.3s ease 0s;
+  padding: 35px;
+
+  & li {
+    display: flex;
+    align-items: center;
+    height: 40px;
+    width: 100%;
+
+    & .menu__link {
+      width: 100%
+    }
+  }
+}
+
+.disabled-toggle {
+  filter: brightness(0.5);
+}
+
+.column {
+  display: flex;
+  flex-direction: column !important;
+}
+
+.row {
+  display: flex;
+  flex-direction: row !important;
+  width: 100%;
+  height: 100%
+}
+
+.empty-result {
+  padding: 25px 0;
+  display: flex;
+  flex-direction: column;
+
+  img {
+    width: 150px;
+    margin: 0 auto;
+    padding: 25px 0;
+    border-radius: 50%;
+  }
+}
+
+.contact-page {
+  padding-top: 110px;
+  height: 100vh;
+
+  .title-max {
+    margin-bottom: 25px
+  }
+}
+
+
+/*__________________________________________________________*/
+/*__________________BLOCK'S__FOR__REUSE_____________________*/
+/*__________________________________________________________*/
+
+
+/*___text_elements___*/
+.sub-title {
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.title-min {
+  font-family: "Syne", sans-serif;
+  letter-spacing: 2px;
+  font-size: 24px;
+  font-weight: 600;
+}
+
+.title-medium {
+  font-family: "Syne", sans-serif;
+  letter-spacing: 2px;
+  font-size: 28px;
+  font-weight: 600;
+}
+
+.title-max {
+  font-family: "Syne", sans-serif;
+  letter-spacing: 2px;
+  font-size: 40px;
+  font-weight: 600;
+}
+
+.title-section {
+  font-family: "Syne", sans-serif;
+  letter-spacing: 2px;
+  font-size: 45px;
+  font-weight: 600;
+}
+
+
+/*___controls_elements___*/
+.buttons-block {
+  display: flex;
+
+  .button-buy {
+    margin-left: 10px;
+    width: 100px;
+    height: 40px;
+  }
+
+  .button-share {
+    width: 40px;
+    height: 40px;
+    margin-left: 10px;
+  }
+
+  .button-download {
+    width: 40px;
+    height: 40px;
+  }
+}
+
+.window-menu {
+  display: flex;
+
+  div {
+    margin-left: 8px;
+    position: relative;
+    cursor: pointer;
+  }
+}
+
+.exit-big {
+  position: absolute;
+  bottom: 50%;
+
+  &:before, &:after {
+    content: "";
+    position: absolute;
+    width: 24px;
+    height: 2px;
+    background: $secondColor;
+  }
+
+  &:before {
+    transform: rotate(45deg);
+  }
+
+  &:after {
+    transform: rotate(-45deg);
+  }
+}
+
+.exit-small {
+  &:before, &:after {
+    content: "";
+    position: absolute;
+    width: 18px;
+    height: 2px;
+    background: $secondColor;
+  }
+
+  &:before {
+    transform: rotate(45deg);
+  }
+
+  &:after {
+    transform: rotate(-45deg);
+  }
+}
+
+.triangle-right {
+  width: 8px;
+  height: 8px;
+  border-top: 2px solid $thirdColor;
+  border-right: 2px solid $thirdColor;
+  transform: rotate(45deg);
+
+}
+
+/*___more_details___*/
+.tags-block {
+  display: flex;
+
+  &__tags {
+    margin-right: 18px;
+    font-weight: 500;
+    color: $thirdColor;
+    font-style: italic;
+  }
+}
+
+.center {
+  margin: 0 auto;
+}
+
+.linkTo {
+  color: $thirdColor;
+  text-decoration: underline;
+}
+
+/*___base style elements___*/
+.max-layout-width {
+  max-width: $layoutWidth;
+}
+
+.max-layout-width-medium {
+  max-width: $layoutWidthMedium;
+}

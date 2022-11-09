@@ -1,0 +1,88 @@
+/*_________________________________________________*/
+/*______all variables are stored in this file______*/
+/*_________________________________________________*/
+
+/*________________values for z-index_______________*/
+    $backgroundItemsPlaylist:-1;
+    $background:0;
+    $base:1;
+    $menu:2;
+    $footer:2;
+    $sliderVolume:2;
+    $search:3;
+    $cart:3;
+    $styleMedia:3;
+    $headerBurger:4;
+    $trackStream:5;
+    $windowBack:6;
+    $lyricsWindow:7;
+    $playBar:8;
+    $linkSearch:8;
+    $searchResult:8;
+    $dropDownMenu:8;
+    $slider:8;
+    $sliderTime:8;
+    $sliderRange:8;
+    $playEror:8;
+    $alert:12;
+    $header:10;
+    $cartLength:10;
+    $window:11;
+    $burgerMenu:11;
+/*___________________________________________________*/
+/*__________________values color_____________________*/
+/*___________________________________________________*/
+   $mainClor: #000000;
+   $sideAndButtonsColor:#2b2b2b;
+   $secondColor: #ffffff;
+   $buttonsAndDetailsColors:#d3d3d3;
+   $thirdColor:#a1a1a1;
+   //elements colors
+     $windowColor: #131313;
+     $footerColor: rgb(7, 9, 12, 0.85);
+     $cartLengthColor:#cc0000;
+     $dropDownMenuColor:#747475;
+     $checkoutPayButtonColor:#7c7c7c;
+     $darkButton: #777777;
+     $lyricsWindowHeaderColor:#171717;
+     $inputRhymeColor:#363636;
+     $windowBackgroundColor:rgba(0, 0, 0, 0.55);
+     $popupMenuColor:rgb(30, 30, 30);
+     $licensingInfoBackgroundColor:rgb(7, 9, 12, 0.8);
+     $loginInputColor:#3d3d3d;
+     //for states of the element (disabled,hover...)
+         $buttonsDisabledColor:rgba(35, 35, 35, 0.88);
+         $searchHoverColor:#e0e0e0;
+         $playlistHoverColor:rgba(255, 255, 255, 0.06);
+         $popupMenuHoverColor:rgb(40, 40, 40);
+         $profileMenuHoverColor:rgba(31, 31, 31, 0.88);
+         $dropDownMenuHover:#d2d2d2;
+         $profileNameHoverColor:rgba(40, 40, 40, 0.36);
+    //loader colors
+     $loaderFirsColor:#3d3d3d;
+     $loaderSecondColor:#545454;
+     $textAreaLoaderColor:rgba(0, 0, 0, 0.67);
+    //borders colors
+              $borderLight:#ffffff;
+              $rhymeBorderColor:#4b4b4b;
+              $borderMediumGray:#383838;
+              $borderLightGray:#838383;
+              $borderTransparentGray:rgba(117, 117, 117, 0.2);
+              $borderDark:#252525;
+    //side elements(sidebars or scrollbar, thumbs...)
+         $scrollbarColor:#252526;
+         $scrollbarThumbColor:#4f4f50;
+         $progressBarCoverColor:rgb(218, 218, 218);
+         $playBarRangeThumbColor:#252525;
+
+/*___________________________________________________*/
+/*__________________values size______________________*/
+/*___________________________________________________*/
+/*___base_elements___*/
+$layoutWidth:1114px;
+$layoutWidthMedium:840px;
+/*___constant_width_playlist_element___*/
+          $TitleWidth:40%;
+          $TimeWidth:8%;
+          $BpmWidth:5%;
+          $TagsWidth:27%;

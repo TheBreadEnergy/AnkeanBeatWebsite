@@ -1,0 +1,39 @@
+@import "Constant";
+%enter{
+  opacity: 0;
+  transform: scale(0.9);
+}
+%enter-active{
+  opacity: 1;
+  transform: translateX(0);
+  transition: opacity 300ms, transform 300ms;
+}
+%exit-active{
+  opacity: 0;
+  transform: scale(0.9);
+  transition: opacity 100ms, transform 100ms;
+}
+.Cart-enter { @extend %enter }
+.Cart-enter-active {@extend %enter-active }
+.Cart-exit-active {@extend %exit-active}
+
+.profile-menu-enter {@extend %enter}
+.profile-menu-enter-active {@extend %enter-active}
+.profile-menu-exit-active {@extend %exit-active}
+
+.popup-menu-enter {@extend %enter}
+.popup-menu-enter-active {@extend %enter-active}
+.popup-menu-exit-active {@extend %exit-active}
+
+.find__dropdown-type-enter {@extend %enter}
+.find__dropdown-type-enter-active {@extend %enter-active}
+.find__dropdown-type-exit-active {@extend %exit-active}
+
+.alert-type-enter {@extend %enter}
+.alert-type-enter-active {@extend %enter-active}
+.alert-type-exit-active {@extend %exit-active}
+
+.window-enter {@extend %enter}
+.window-enter-active {@extend %enter-active}
+.window-exit-active {@extend %exit-active}
+

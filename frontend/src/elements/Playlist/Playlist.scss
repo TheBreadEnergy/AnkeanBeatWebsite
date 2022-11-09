@@ -1,0 +1,48 @@
+@import "../../scss/Constant";
+.playlist {
+    /*___constant_width_playlist____*/
+      $TitleWidth:40%;
+      $TimeWidth:8%;
+      $BpmWidth:5%;
+      $TagsWidth:23.5%;
+    /*_____________________________*/
+  margin-bottom: 10px;
+  &__container {
+    padding-top: 40px;
+    margin:0 auto;
+  }
+
+  &__basis {list-style: none;}
+
+  &__li {
+    display: flex;
+    flex-direction: row;
+    font-weight: 800;
+    font-size: 14px;
+    opacity: 0.65;
+    text-align: left;
+    margin-bottom: 10px;
+  }
+  &__title {width: $TitleWidth;}
+
+  &__time {width: $TimeWidth;}
+
+  &__bpm {width: $BpmWidth;}
+
+  &__tags {width: $TagsWidth;}
+
+  &__sale {}
+  &__item{
+    margin-bottom: 10px;
+    &:hover{
+      background: $playlistHoverColor;
+    }
+    &:hover .track-stream{
+      display: none;
+      }
+      &:hover .track-ico-play{
+        display: block;
+      }
+  }
+
+}

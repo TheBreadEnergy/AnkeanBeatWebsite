@@ -1,0 +1,120 @@
+@import "../../scss/Constant";
+.beat{
+  max-width: 1114px;
+  padding-top: 120px;
+  padding-bottom: 80px;
+  margin:0 auto;
+  display: flex;
+  flex-direction: row;
+  &__genre{
+    padding-left: 10px;
+    display: flex;
+    align-items: center;
+
+  }
+  &__bpm{
+    display: flex;
+    align-items: center;
+
+  }
+   &__plays-count{
+    display: flex;
+    align-items: center;
+    padding-left: 15px;
+  }
+  &__title{padding-top: 20px;
+    text-align: left;
+    font-size: 40px;
+    font-weight: 700;
+
+
+  }
+  &__cover{
+    height: 200px;
+    width: 200px;
+    position: relative;
+    & img{
+     height: 100%;
+    width: 100%;
+    object-fit: cover;
+    }
+    & .button-play {
+      height: 60px;
+      width: 60px;
+      border-radius: 50%;
+      position: absolute;
+      left: 70px;
+      top: 70px;
+
+      & img {
+        height: 45px;
+        width: 45px;
+      }
+    }
+
+  }
+
+  &__info-container {
+    padding-left: 25px;
+    position: relative;
+    width: 914px;
+  }
+  &__info{
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    bottom: 65px;
+    & img{
+      height: 18px;
+      padding-right: 5px;
+    }
+  }
+  &__button-block{
+    position: absolute;
+    bottom: 0px;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    & .button-block{
+     display: flex;
+    }
+    & .button-buy{
+      width: 100px;
+      margin-right: 8px;
+    }
+    & .button-share{
+      width: 90px;
+      color: $secondColor;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      & span{
+        padding-left: 8px;
+      }
+    }
+    & .button-download{
+      width: 120px;
+      color: $secondColor;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-right: 8px;
+      & span{
+        padding-left: 8px;
+      }
+    }
+  }
+  &__tags{
+    display: flex;
+    padding-right: 30px;
+  }
+}
+.Related{
+  width: 100%;
+  height: 25px;
+  margin-bottom: 40px;
+  font-weight: 600;
+  font-size: 14px;
+  text-align: left;
+
+}

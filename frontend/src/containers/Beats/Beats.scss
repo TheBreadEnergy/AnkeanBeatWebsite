@@ -1,0 +1,107 @@
+@import "../../scss/Constant";
+
+.beat-search {
+  flex-direction: column;
+  margin: 0 auto;
+  padding: 110px 0;
+  min-height: 110vh;
+  &__title{
+    margin-bottom: 45px;
+  }
+  &__container {
+    margin: 0 auto;
+    position: relative;
+  }
+
+  &__result {
+    margin: 0 auto;
+    width: 1114px;
+  }
+
+  &__dropdown {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__search {
+
+    position: relative;
+
+    & .search__area {
+      margin-top: 20px;
+      height: 50px !important;
+      padding: 0 25px!important;
+    }
+  }
+
+}
+
+.dropdown-btn {
+  width: 160px;
+  height: 45px;
+  background: $secondColor;
+  position: relative;
+  border-radius: 4px;
+  color: $dropDownMenuColor;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  letter-spacing: 1.2px;
+  font-size: 13.5px;
+  font-weight: 550;
+
+  & span {
+    padding-right: 5px;
+  }
+
+  &__expand {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    height: 100%;
+    right: 5px;
+  }
+
+  & img {
+    width: 28px;
+  }
+}
+
+.dropdown-elem {
+  position: relative;
+}
+
+.find {
+  &__dropdown-type {
+    background: $secondColor;
+    width: 125px;
+    top: 50px;
+    position: absolute;
+    z-index: $dropDownMenu;
+    align-items: center;
+    border-radius: 3px;
+    overflow: auto;
+    padding: 5px 0;
+
+    &::-webkit-scrollbar {
+      width: 4px;
+
+    }
+
+    &__name {
+      width: 100%;
+      height: 40px;
+      display: flex;
+      align-items: center;
+      text-align: left;
+      color: $mainClor;
+      font-weight: 600;
+      padding-left: 15px;
+      cursor: pointer;
+      &:hover {
+        background: $dropDownMenuHover;
+      }
+    }
+  }
+}

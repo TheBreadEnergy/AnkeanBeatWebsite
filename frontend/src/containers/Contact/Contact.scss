@@ -1,0 +1,76 @@
+@import "../../scss/Constant";
+%ContactInput{
+  border: none;
+  border-bottom: 1px solid white;
+  background-color: transparent;
+  color: inherit;
+  outline: none;
+  font-weight: bold;
+}
+.contact {
+  padding-bottom: 250px;
+  margin: 0 auto;
+  &__container{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    margin: 0 auto;
+  }
+
+  &__input-informaition {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    color: $secondColor;
+  }
+
+  &__first-string {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 40px;
+  }
+
+  &__button {
+    position: relative;
+  }
+
+  &__submit-button {
+    margin-top: 40px;
+    width: 160px;
+    height: 45px;
+    border-radius: 3px;
+    font-weight: 600;
+    font-size: 14px;
+    cursor: pointer;
+    position: absolute;
+    right: 0;
+    background: $buttonsAndDetailsColors;
+  }
+}
+.input-name {
+  width: 47%;
+  resize: none;
+  @extend %ContactInput;
+}
+.input-firstname {
+  width: 250px;
+  @extend %ContactInput;
+}
+.input-lastname {
+  width: 250px;
+  @extend %ContactInput;
+}
+.input-email {
+  width: 47%;
+  resize: none;
+  @extend %ContactInput;
+}
+.input-subject {
+  margin-top: 40px;
+  @extend %ContactInput;
+}
+.input-message {
+  margin-top: 40px;
+  @extend %ContactInput;
+}
