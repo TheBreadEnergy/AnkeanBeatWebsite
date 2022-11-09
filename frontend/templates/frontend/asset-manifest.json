@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/static/css/main.8c239f6e.css",
+    "main.js": "/static/js/main.214e5b97.js",
+    "Ankean/build/Ankean/build/Ankean/build/Ankean/build/Ankean/build/Ankean/build/Ankean/build/static/media/3.jpg": "/Ankean/build/Ankean/build/Ankean/build/Ankean/build/Ankean/build/Ankean/build/Ankean/build/static/media/3.ca6601a8e41b72cce7f8.jpg",
+    "Ankean/build/Ankean/build/Ankean/build/Ankean/build/Ankean/build/Ankean/build/Ankean/build/static/media/Cover_track.png": "/Ankean/build/Ankean/build/Ankean/build/Ankean/build/Ankean/build/Ankean/build/Ankean/build/static/media/Cover_track.c875b3534b3d2728cc78.png",
+    "index.html": "/index.html",
+    "Ankean/build/Ankean/build/Ankean/build/Ankean/build/Ankean/build/Ankean/build/Ankean/build/static/media/preloader.svg": "/Ankean/build/Ankean/build/Ankean/build/Ankean/build/Ankean/build/Ankean/build/Ankean/build/static/media/preloader.24d2cff517b472e3fc73a428e15c93e8.svg",
+    "main.8c239f6e.css.map": "/static/css/main.8c239f6e.css.map",
+    "main.214e5b97.js.map": "/static/js/main.214e5b97.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.8c239f6e.css",
+    "static/js/main.214e5b97.js"
+  ]
+}
