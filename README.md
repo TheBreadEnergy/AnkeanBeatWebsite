@@ -3,7 +3,7 @@
   
 <img src="https://img.shields.io/npm/dy/Amovet">
 
-<img src="https://img.shields.io/badge/made%20by-silentlad-blue.svg" >
+<img src="https://img.shields.io/badge/made%20by-Amovet-blue.svg" >
 
 <img src="https://img.shields.io/badge/react-18.2.0-green.svg">
 
