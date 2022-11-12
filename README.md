@@ -1,7 +1,5 @@
 <h1 align="center">Ankean beat store</h1>
 <p align="center">
-  
-<img src="https://img.shields.io/npm/dy/Amovet">
 
 <img src="https://img.shields.io/badge/made%20by-Amovet-blue.svg" >
 
