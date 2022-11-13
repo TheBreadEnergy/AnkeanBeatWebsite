@@ -25,5 +25,16 @@ The interface has been adapted to mobile devices, which has forced a radical cha
 
 <h2 align="center"><img src="https://user-images.githubusercontent.com/57827473/201535669-85497f54-9a74-414b-bd0b-cb799f36dc35.gif" width="30%" height="60%" align='center'></h2>
 
+## Project setup
+
+```
+git clone https://github.com/Amovet/AnkeanBeatWebsite.git
+pip install requirements.txt
+
+cd /frontend
+npm install
+npm run server
+```
+
 ## In future plans
 сhange backend from Django to NodeJs, add a payment option, add an option to record a demo track with various effects
