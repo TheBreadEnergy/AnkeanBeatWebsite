@@ -16,5 +16,13 @@
 <h2 align="center"><a  href="http://ankean.site/" target="_blank">View site</a></h2>
 
 ## Description
-The site is a personal place of sale of instrumentals, implemented by scratch on **React** using **Redux** BackEnd temporarily implemented on **Django**,  with registration using **JWT** and **GOOGLE oAuth** , ability to write notes to tracks. There is also a search for instrumentals depending on their style, genre, bpm.
-<h3> In future plans</h3> сhange backend from **Django** to **NodeJs**, add a payment option, add an option to record a demo track with various effects
+The site is a personal place of sale of instrumentals, implemented by scratch on **React** using **Redux** BackEnd temporarily implemented on **Django**,  with registration using **JWT** and **google oAuth** , ability to write notes to tracks. There is also a search for instrumentals depending on their style, genre, bpm.
+**HOW IT WORKS AT THE MOMENT**
+
+![Untitled](https://user-images.githubusercontent.com/57827473/201535555-6c648174-e5df-41ef-9c50-f3864d4ac569.gif)
+
+The interface has been adapted to mobile devices, which has forced a radical change in the appearance of the player
+![FAQ-gif e8393416e83c614a8cee](https://user-images.githubusercontent.com/57827473/201535669-85497f54-9a74-414b-bd0b-cb799f36dc35.gif)
+
+##In future plans
+сhange backend from Django to NodeJs, add a payment option, add an option to record a demo track with various effects
