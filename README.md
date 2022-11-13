@@ -17,12 +17,12 @@
 
 ## Description
 The site is a personal place of sale of instrumentals, implemented by scratch on **React** using **Redux** BackEnd temporarily implemented on **Django**,  with registration using **JWT** and **google oAuth** , ability to write notes to tracks. There is also a search for instrumentals depending on their style, genre, bpm.
-##**HOW IT WORKS AT THE MOMENT**
+<p align="center">**HOW IT WORKS AT THE MOMENT**</p>
 
 ![Untitled](https://user-images.githubusercontent.com/57827473/201535555-6c648174-e5df-41ef-9c50-f3864d4ac569.gif)
 
 The interface has been adapted to mobile devices, which has forced a radical change in the appearance of the player
 
-<img src="https://user-images.githubusercontent.com/57827473/201535669-85497f54-9a74-414b-bd0b-cb799f36dc35.gif" width="30%" height="60%" align='center'>
+<h2 align="center"><img src="https://user-images.githubusercontent.com/57827473/201535669-85497f54-9a74-414b-bd0b-cb799f36dc35.gif" width="30%" height="60%" align='center'></h2>
 ##In future plans
 сhange backend from Django to NodeJs, add a payment option, add an option to record a demo track with various effects
