@@ -30,6 +30,9 @@ The interface has been adapted to mobile devices, which has forced a radical cha
 ```
 git clone https://github.com/Amovet/AnkeanBeatWebsite.git
 cd ./AnkeanBeatWebsite
+pip install virtualenv 
+python -m venv venv
+venv\Scripts\activate 
 pip install -r requirements.txt
 python manage.py runserver
 cd .\frontend\
