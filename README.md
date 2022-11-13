@@ -29,9 +29,9 @@ The interface has been adapted to mobile devices, which has forced a radical cha
 
 ```
 git clone https://github.com/Amovet/AnkeanBeatWebsite.git
-pip install requirements.txt
-
-cd /frontend
+cd ./AnkeanBeatWebsite
+pip install -r requirements.txt
+cd .\frontend\
 npm install
 npm run server
 ```
