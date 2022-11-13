@@ -22,6 +22,7 @@ The site is a personal place of sale of instrumentals, implemented by scratch on
 ![Untitled](https://user-images.githubusercontent.com/57827473/201535555-6c648174-e5df-41ef-9c50-f3864d4ac569.gif)
 
 The interface has been adapted to mobile devices, which has forced a radical change in the appearance of the player
+<img src="[https://user-images.githubusercontent.com/57827473/201481169-b38196dc-4a1e-4de0-a8e5-af05eb5bffae.png](https://user-images.githubusercontent.com/57827473/201535669-85497f54-9a74-414b-bd0b-cb799f36dc35.gif)" width="30%" height="60%">
 ![FAQ-gif e8393416e83c614a8cee](https://user-images.githubusercontent.com/57827473/201535669-85497f54-9a74-414b-bd0b-cb799f36dc35.gif)
 
 ##In future plans
