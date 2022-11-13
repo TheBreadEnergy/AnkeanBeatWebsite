@@ -16,6 +16,5 @@
 <h2 align="center"><a  href="http://ankean.site/" target="_blank">View site</a></h2>
 
 ## Description
-The site is a personal place of sale of instrumentals, implemented by scratch on **React**, which registration, the ability to write notes to instrumentals. The player was written from scratch using WEB audio api
-
-
+The site is a personal place of sale of instrumentals, implemented by scratch on **React** using **Redux** BackEnd temporarily implemented on **Django**,  with registration using **JWT** and **GOOGLE oAuth** , ability to write notes to tracks. There is also a search for instrumentals depending on their style, genre, bpm.
+<h3> In future plans</h3> сhange backend from **Django** to **NodeJs**, add a payment option, add an option to record a demo track with various effects
