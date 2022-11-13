@@ -22,7 +22,7 @@ The site is a personal place of sale of instrumentals, implemented by scratch on
 ![Untitled](https://user-images.githubusercontent.com/57827473/201535555-6c648174-e5df-41ef-9c50-f3864d4ac569.gif)
 
 The interface has been adapted to mobile devices, which has forced a radical change in the appearance of the player
-<img src="https://user-images.githubusercontent.com/57827473/201535669-85497f54-9a74-414b-bd0b-cb799f36dc35.gif" width="30%" height="60%">
+<img src="https://user-images.githubusercontent.com/57827473/201535669-85497f54-9a74-414b-bd0b-cb799f36dc35.gif" width="30%" height="60%" align='center'>
 
 ##In future plans
 сhange backend from Django to NodeJs, add a payment option, add an option to record a demo track with various effects
