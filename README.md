@@ -36,7 +36,9 @@ venv\Scripts\activate
 pip install -r requirements.txt
 python manage.py runserver
 ```
+
 <p align="center">In new console</p>
+
 ```
 cd .\AnkeanBeatWebsite
 cd .\frontend\
