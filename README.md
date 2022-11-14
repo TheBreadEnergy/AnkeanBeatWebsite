@@ -25,6 +25,10 @@ The interface has been adapted to mobile devices, which has forced a radical cha
 
 <h2 align="center"><img src="https://user-images.githubusercontent.com/57827473/201695366-3333f71d-d993-4456-9bf3-850fd36988c3.gif" width="30%" height="60%" align='center'></h2>
 
+It is also possible to change the language
+
+![1](https://user-images.githubusercontent.com/57827473/201701348-772c1562-ad3d-4ac5-971d-024d284b7da1.gif)
+
 ## Project setup
 
 ```
