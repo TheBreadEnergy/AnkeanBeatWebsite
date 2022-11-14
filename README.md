@@ -37,7 +37,7 @@ pip install -r requirements.txt
 python manage.py runserver
 ```
 
-<p align="center">In new console</p>
+<p align="left">In new console</p>
 
 ```
 cd .\AnkeanBeatWebsite
