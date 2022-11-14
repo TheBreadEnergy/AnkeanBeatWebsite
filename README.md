@@ -43,7 +43,7 @@ python manage.py runserver
 cd .\AnkeanBeatWebsite
 cd .\frontend\
 npm install
-npm run server
+npm start
 ```
 
 ## In future plans
