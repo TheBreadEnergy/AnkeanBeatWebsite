@@ -16,7 +16,7 @@
 <h2 align="center"><a  href="http://ankean.site/" target="_blank">View site</a></h2>
 
 ## Description
-The site is a personal place of sale of instrumentals, implemented by scratch on **React** using **Redux** BackEnd temporarily implemented on **Django**,  with registration using **JWT** and **google oAuth** , ability to write notes to tracks. There is also a search for instrumentals depending on their style, genre, bpm.
+The site is a personal place of sale of instrumentals, implemented by scratch on **React** using **Redux**. BackEnd temporarily implemented on **Django**,  with registration using **JWT** and **google oAuth** , ability to write notes to tracks. There is also a search for instrumentals depending on their style, genre, bpm.
 <p align="center">HOW IT WORKS AT THE MOMENT</p>
 
 ![Untitled](https://user-images.githubusercontent.com/57827473/201535555-6c648174-e5df-41ef-9c50-f3864d4ac569.gif)
@@ -29,12 +29,17 @@ The interface has been adapted to mobile devices, which has forced a radical cha
 
 ```
 git clone https://github.com/Amovet/AnkeanBeatWebsite.git
-cd ./AnkeanBeatWebsite
+cd .\AnkeanBeatWebsite
 pip install virtualenv 
 python -m venv venv
 venv\Scripts\activate 
 pip install -r requirements.txt
 python manage.py runserver
+```
+
+```
+//open new console
+cd .\AnkeanBeatWebsite
 cd .\frontend\
 npm install
 npm run server
