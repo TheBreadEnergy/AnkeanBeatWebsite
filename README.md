@@ -30,7 +30,7 @@ It is also possible to change the language
 ![1](https://user-images.githubusercontent.com/57827473/201701348-772c1562-ad3d-4ac5-971d-024d284b7da1.gif)
 
 ## Project setup
-
+(windows*)
 ```
 git clone https://github.com/Amovet/AnkeanBeatWebsite.git
 cd .\AnkeanBeatWebsite
